@@ -1,0 +1,12 @@
+<?xml version = "1.0" encoding = "UTF-8" standalone = "yes" ?>
+<!DOCTYPE youtube[
+    <!ELEMENT videos (video+)>
+    <!ELEMENT video (title, description, Aurthor, views, comments)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT description (#PCDATA)>
+    <!ELEMENT Aurthor (#PCDATA)>
+    <!ELEMENT views (#PCDATA)>
+    <!ELEMENT comments (comment*)>
+    <!ELEMENT comment (user, content)>
+    <!ELEMENT content (#PCDATA)>
+]>

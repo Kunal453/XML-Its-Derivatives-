@@ -1,0 +1,54 @@
+.s {
+    display: table-row;
+}
+
+video {
+    display: table-header-group;
+    border: solid 1px;
+    width: 100%;
+}
+
+title {
+    display: table-cell;
+    border: solid 1px;
+    width: 25%;
+    text-align: center;
+    padding: 15px;
+    
+}
+
+description {
+    display: table-cell;
+    border: solid 1px;
+    width: 25%;
+    text-align: center;
+    padding: 15px;
+}
+
+Aurthor {
+    display: table-cell;
+    border: solid 1px;
+    width: 15%;
+    text-align: center;
+    padding: 15px;
+}
+
+views {
+    display: table-cell;
+    border: solid 1px;
+    width: 10%;
+    text-align: center;
+    padding: 15px;
+}
+
+comment {
+    display: table-cell;
+    border: solid 1px;
+    width: 11%;
+    text-align: center;
+    padding: 15px;
+}
+
+video:hover {
+    background-color: rgb(80, 138, 255);
+}

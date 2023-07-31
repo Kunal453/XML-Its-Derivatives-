@@ -1,0 +1,28 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="videos" type="videoListType"/>
+    <xs:complexType name="videoListType">
+        <xs:sequence>
+            <xs:element name="video" type="videoType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="videoType">
+        <xs:sequence>
+            <xs:element name="title" type="xs:string"/>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="Aurthor" type="xs:string"/>
+            <xs:element name="views" type="xs:string"/>
+            <xs:element name="comments" type="commentListType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="commentListType">
+        <xs:sequence>
+            <xs:element name="comment" type="commentType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="commentType">
+        <xs:sequence>
+            <xs:element name="user" type="xs:string"/>
+            <xs:element name="content" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
